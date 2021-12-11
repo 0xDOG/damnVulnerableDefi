@@ -52,8 +52,7 @@ describe('[Challenge] Selfie', function () {
     )
     await exploit.execute()
     await ethers.provider.send('evm_increaseTime', [2 * 24 * 60 * 60])
-    const res = await exploit.executeQueuedAction()
-    console.log(res)
+    await exploit.executeQueuedAction()
   })
 
   after(async function () {

