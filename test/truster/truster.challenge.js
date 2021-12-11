@@ -41,15 +41,7 @@ describe('[Challenge] Truster', function () {
       this.pool.address,
       this.token.address
     )
-    const result = await exploit.execute(attacker.address)
-
-    // const DamnValuableToken = await ethers.getContractFactory(
-    //   'DamnValuableToken',
-    //   attacker
-    // )
-
-    // const token = await DamnValuableToken.deploy()
-    // token.transferFrom(this.pool, attacker.address)
+    const result = await exploit.execute()
 
     console.log(result)
   })

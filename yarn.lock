@@ -4114,7 +4114,7 @@
     "ajv" "^6.12.3"
     "har-schema" "^2.0.0"
 
-"hardhat-dependency-compiler@1.1.1":
+"hardhat-dependency-compiler@^1.1.1":
   "integrity" "sha512-2xubH8aPojhMGbILFlfL28twu6l/5Tyrj4Dpkogvycse6YegKW9GuGA3rnbPH0KP+Nv2xT626ZuR2Ys+w3ifPw=="
   "resolved" "https://registry.npmjs.org/hardhat-dependency-compiler/-/hardhat-dependency-compiler-1.1.1.tgz"
   "version" "1.1.1"

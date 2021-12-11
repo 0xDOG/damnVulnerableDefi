@@ -52,9 +52,7 @@ describe('[Challenge] Naive receiver', function () {
       attacker
     )
     const exploit = await ExploitFactory.deploy()
-
     const res = await exploit.execute(this.receiver.address, this.pool.address)
-
     console.log(res)
   })
 
